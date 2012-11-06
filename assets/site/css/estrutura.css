@@ -1,0 +1,113 @@
+/*---------------[MAIN LAYOUT INFO]---------------*/
+#container { /*background: url("../images/bg-karla.png"); */position: relative; height:100% /*border:solid 1px #000*/ }
+
+#header { margin-bottom:17px; height:80px;background: url("../images/headerfff.png") repeat-x; position: relative; }
+#logo { float:left; margin-top:16px; margin-left:100px; }
+/*---------------[MENU]---------------*/
+#menu{/*float:left;*/ margin-top:0; margin-left:250px; padding-top:10px;}
+
+/*sprite*/  /*#mega-menu-1 do dcmegamenu ficou de 100 para 80% para o link funcionar*/
+#navlist{position:relative;}
+#navlist li, #navlist a{height:25px;display:block;}
+#face{ height:50px; width:50px; background: url("../images/fe.png") 0 0 no-repeat; background-size:25px 50px;float:right; margin-top:1px; margin-right:10%;}
+#face a:hover{height:50px; width:50px; background: url("../images/fe.png") 0 -25px no-repeat; background-size:25px 50px;}
+#pin{ height:50px; width:50px; background: url("../images/pi.png") 0 0 no-repeat; background-size:25px 50px;float:right; margin-top:1px; margin-right:-3px;}
+#pin a:hover{height:50px; width:50px; background: url("../images/pi.png") 0 -25px no-repeat; background-size:25px 50px;}
+
+#linha { margin-left:auto; margin-right:auto; margin-top:30px; margin-bottom:15px; height:2px; width:65%; background: url("../images/tira15.png"); position: relative; }
+
+/*---------------[o content engloba o wrapper para caso de conteudos 100% como foto por exemplo]---------------*/
+#content { padding-bottom: 3px; position: relative; font-family:Helvetica; }
+#content .fullwidth { width: 100% !important; }
+.die { width:100%; margin-top:-17px}	
+.titulo {margin-top:40px; margin-bottom:30px;font-size:20px; color:#DCC08E}
+.corpo {font-size:13px; /*border:solid 1px #F0C;*/}
+/*---------------[o conteudo será limitado pela largura do wrapper]---------------*/
+#wrapper { text-align:center; width:65%; margin:auto auto; /*border:solid 1px #000*/}
+#wrapper .fullwidthw { width: 100% !important; }
+
+
+/*COLECAO*/
+#wrapperthumb {width:65%; margin:auto auto; /*border:solid 1px #000*/}
+#slider1 { width:20%; margin:auto auto; /*border:solid 1px #F00*/}
+.colecao { margin: auto auto;}
+.bx-wrapper, .bx-window {margin: auto auto; padding-bottom:4px;padding-top:3px; /*border:solid 1px #0C0*/}
+/*seta*/
+.bx-prev {position:absolute;top:25%;left:-10%;width:71px;height: 71px;background: url("../images/flechas8.png") no-repeat;}
+.bx-next {position: absolute;top:25%;right:-15%;width: 71px;height: 71px;background: url("../images/flechas81.png") no-repeat;}
+/*.bx-prev {float:left;width:71px;height: 71px;background: url("../images/seta_esquerda.png") no-repeat;}
+.bx-next {float:right;width: 71px;height: 71px;background: url("../images/seta_direita.png") no-repeat;}*/
+
+/*---------------[footer elaborado]---------------*/
+/*#footer elaborado {*/
+
+/*---------------[formulario de cadastro padrão do admin]---------------*/
+table td.colecao { padding-bottom: 2px; padding-left:2px; text-align:center  }
+.thumb {padding-left:5px}
+#cadastroform {width:100%;height:20px;font-family:Helvetica;font-size:13px;} 
+#cadastroform input {width:50%;height:20px; border:solid 1px #E9E0B9; padding-left:-20px}
+#cadastroform .file-padrao {width:20%;height:20px;  }
+#cadastroform .label {width:10%;height:20px;}
+#cadastroform #descricao {width:50%;height:80px; border-color:#E9E0B9}
+#cadastroform .botao { width:50%;background:#6D6769;color:#ffffff;border:1px solid #ffffff;font-size:13px;float:right;margin-right:3px;padding-top: 2px;padding-bottom:2px;padding-left:2px;padding-right:2px;font-family:Arial, Helvetica, sans-serif;}
+
+/*form contato*/
+#todoform {	margin-top:40px; font-family:Helvetica; width:90% }
+#todoform td {	padding-top:6px;font-size:13px;font-family:Helvetica, sans-serif;}
+#todoform td.mensagem {vertical-align: top;font-family:Helvetica, sans-serif;}
+#contact_form {margin: auto auto}
+.text-input {	background:#ffffff;width:100%;height:20px;font-family:Helvetica, sans-serif;font-size:13px;}
+
+.textarea {background:#ffffff;width:100%;font-family:Helvetica, sans-serif;font-size:13px;}
+
+input.button {background:#6F615E;color:#E9E0B9;border:1px solid #ffffff;font-size:13px;margin-right:20px;padding-top: 2px;padding-bottom:2px;padding-left:4px;padding-right:4px;font-family:Helvetica; font-weight:bold}
+#todoform p {color:#373435;font-size:13px;font-family:Helvetica, sans-serif;word-spacing: 0px;}
+.error {color: #F00;font-size:13px;font-family:Arial; width:100%;}
+label#nome_label      { position:absolute; top:0; left:0; }
+#nome            { background:#ffffff; width:98%;height:20px;font-family:Helvetica;font-size:13px; }
+label#nome_error      { width:98%; }
+label#email_label     { position:absolute; top:45px; left:0px; }
+input#email           {background:#ffffff;width:98%;height:20px;font-family:Helvetica;font-size:13px;  }
+label#email_error      { position:absolute; top:67px; left:120px; }
+label#assunto_label     { position:absolute; top:90px; left:0px; }
+input#assunto           { background:#ffffff;width:98%;height:20px;font-family:Helvetica;font-size:13px;}
+label#assunto_error      { position:absolute; top:112px; left:120px; }
+label#mensagem_label     { position:absolute; top:90px; left:0px; }
+
+#mensagem           {background:#ffffff;width:98%;font-family:Arial, Helvetica, sans-serif;font-size:13px;}
+
+label#mensagem_error      { position:absolute; top:132px; left:120px; }
+#message { width:180px;margin:60px 0 0 100px; }
+
+.focusField{  border:solid 2px #73A6FF;  background:#EFF5FF;  color:#000;  }  
+.idleField{  background:#EEE;  color: #6F6F6F;  border: solid 2px #DFDFDF;  }
+.done {/*background:url(iconIdea.gif) no-repeat 2px; */padding-left:20px;font-family:arial;font-size:12px; width:70%; margin:20px auto; display:none}
+
+
+/*admin*/
+#menuadmin { height: 22px; }
+#menuadmin ul {padding:40px 0px; margin:0px; float: left; width: 100%; font: 130% Arial, Helvetica, sans-serif; height:20px;}
+#menuadmin ul li { display: inline; }
+#menuadmin ul li a {display:block; /*text-align:center;*/ padding: 0px 0px; float:left; color:#FFFFFF; border-right:2px solid #B2B2B2;}	
+#menuadmin ul li a.quemsomos {width: 108px; background-position: 0 0;text-align:center;}
+#menuadmin ul li a.release {width: 108px; background-position: 0 0;text-align:center;}
+#menuadmin ul li a.cuidado {width: 108px; background-position: 0 0;text-align:center;}
+#menuadmin ul li a.onde {width: 140px; background-position: 0 0;text-align:center;}
+#menuadmin ul li a:hover {font-weight:bold;}
+#contentadmin { background: white; width:100%; min-height: 408px; height:408px auto !important; margin: auto auto; font-family:Arial, Helvetica, sans-serif; }
+#contentadmin .criarnovo {margin:20px 0; color:#666; font-size:14px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+#contentadmin .acoes {margin:20px 5px; color:#666; font-size:12px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+#contentadmin h1 {font-size:26px; margin:20px 0;}
+#contentadmin p {margin:20px 0; font-size:14px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+#contentadmin table {background:white;font-family:Arial, Helvetica, sans-serif;margin-bottom:0;color:#373435;}
+#contentadmin th {padding:5px 35px;font-size:17px;font-family:Arial, Helvetica, sans-serif;font-weight:bold}
+.botao {	background:#6D6769;	color:#ffffff;border:1px solid #ffffff;font-size:13px;float:right;margin-right:3px;padding-top: 2px;padding-bottom:2px;padding-left:2px;padding-right:2px;font-family:Arial, Helvetica, sans-serif;}
+/*adminblog*/
+#contentadmin th.blog {padding:5px 5px;font-size:17px;font-family:Arial, Helvetica, sans-serif;font-weight:bold}
+#contentadmin td.titulo{width:400px;padding:5px 5px;font-size:13px;font-family:Arial, Helvetica, sans-serif;border-bottom:1.5px solid #B2B2B2;}
+/*fim adminblog*/
+
+
+
+
+

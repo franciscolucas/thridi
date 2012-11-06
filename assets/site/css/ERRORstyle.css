@@ -1,0 +1,231 @@
+/* Reset global */
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent}
+body {line-height: 1}
+a{ text-decoration:none; }
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+hr {display:none}
+textarea {resize:none;overflow:auto;}
+
+/* remember to define focus styles! */
+:focus {outline: 0}
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none}
+del {text-decoration: line-through}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0}
+
+/* clearing */
+body {
+    color: #000;
+    font-size: 12px;}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, blockquote, th, td {
+    margin: 0;
+    padding: 0;}
+
+p {
+    margin: 0 0 0 0;
+    padding: 0;}
+
+input, textarea {
+    color: #999;
+    font: 8pt Arial, Verdana, Tahoma;}
+
+select {
+    color: #999;
+    font: 8pt Arial, Verdana, Tahoma;}
+
+fieldset, img {
+    border: none;
+    margin: 0;}
+
+img { display: block; }
+
+caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;}
+
+address {
+    display: inline;
+    font-weight: normal;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;}
+
+blockquote, q { quotes: none; }
+
+abbr, acronym { border: 0; }
+
+caption, th { text-align: left; }
+
+textarea { overflow: auto; }
+
+ul, ol, dl { list-style-type: none; }
+
+a{
+    color: #00f;
+    text-decoration: none;}
+
+a:link, a:visited {}
+
+a:hover, a:active {}
+ 
+/* @Aux: elementos auxiliares padroes */
+ 
+.block { display: block; }
+.bold, strong { font-weight: bold; }
+.clear { clear: both;}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;}
+.clearfix { display: inline-block; }
+/* Hide from IE Mac \*/
+.clearfix { display: block; }
+/* End hide from IE Mac */
+.italic { font-style: italic; }
+.left { float: left; }
+.line-through { text-decoration: line-through; }
+.no-float { float: none; }
+.none { display: none; }
+.right { float: right; }
+.underline { text-decoration: underline; }
+.uppercase { text-transform: uppercase; }
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+* html>body .clearfix {
+    display: inline-block;
+    width: 100%
+}
+
+/* end limpeza */
+
+.hidden {
+display: none;
+}
+
+@font-face {
+    font-family: 'segoelight';
+    /*src: url('../fontes/segoeuil.eot');*/ /* somente para o IE9 */
+	src: url('../fonts/segoeuil.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/segoeuil.woff') format('woff'), /* Modern Browsers */
+   		 url('../fonts/segoeuil.ttf') format("truetype"), /*safari, android, ios*/
+		 /*url('../fontes/segoeuil.svg#svgFontName') format('svg');*/ /* Legacy iOS */
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'segoelightp';
+/*	src: url('../fontes/segoepr.eot');*/ /* somente para o IE9 */
+	src: url('../fonts/segoepr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/segoepr.woff') format('woff'), /* Modern Browsers */
+   		 url('../fonts/segoepr.ttf') format("truetype"), /*para outros browsers*/
+		 /*url('../fontes/segoepr.svg#svgFontName') format('svg'), /* Legacy iOS */
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+#page-container {
+width: 1200px;
+/*margin: auto;*/
+margin: 5em auto;
+}
+
+#content {
+border:3px solid #CBA964;
+}
+#content IMG.displayed {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#sidebar-a {
+background: darkgreen;
+float: left;
+width: 280px;
+background: darkgreen;
+padding-bottom:20px;
+}
+#sidebar-a IMG.displaye {
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#box_menu {
+background: white;
+height: 70px;
+}
+
+#box_menu ul{
+padding-top:50px; 
+padding-left:280px;
+margin:0px;
+
+}
+#box_menu ul li { display: inline; }
+#box_menu ul li a { font-family: 'segoelightp'; padding: 2px 15px; color: #333; background-image:url(../images/gb-menu-li.png); background-repeat:no-repeat; }
+#box_menu ul li a:hover {font-weight:bold;}
+
+#header {
+background: white;
+height:auto;
+}
+
+#header h2 {
+padding-bottom: 12px;
+padding-top:20px;
+padding-right:280px;
+}
+
+#premio {
+background: white;
+height:85px;
+}
+
+#premio IMG.displaye {
+    display: block;
+    margin-right: -12cm }
+
+
+#footer {
+background: white;
+height:auto;
+}
+#footer .padding {
+padding-top: 20px;
+}
+#footer h2 {
+font-family:Verdana, Geneva, sans-serif;
+float:right;
+color:#CCC;
+margin-right: 8em;
+}
+
+#clear{
+clear:both;
+}
+
+
+
+

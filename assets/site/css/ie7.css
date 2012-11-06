@@ -1,0 +1,60 @@
+/* IE7 Style Sheet - Estilos para corrigir os bugs do IE7 */
+
+/*-- Login --*/ 
+#wrapper.login #content form fieldset label.check { line-height: 19px; }
+#wrapper.login #content form fieldset p.legenda { font-size: 10px; margin: -17px 0 0 0; width: 220px; }
+/*-- Home - input de busca --*/
+#middle form.buscar-tarefas .bg-input input { margin: 0 0 0 -7px; }
+/*-- Home - select --*/
+#middle form.buscar-tarefas select { width: 215px; }
+
+#content .sub_menu #sub_cadastro_basico ul li, #content .sub_menu #sub_relatorios ul li, #content .sub_menu #sub_solicitacao ul li, #content .sub_menu #sub_contratos ul li, #content .sub_menu #sub_gestao_pessoas ul li, #content .sub_menu #sub_gestao_projetos ul li {
+    float: none;
+    height: auto;
+}
+/*-- dashboard - resumo-projeto --*/
+#content.dashboard ul.resumo-projeto li { padding: 0 13px; }
+/*-- dashboard - multiselect --*/
+#content.dashboard form.filtrar ul li .ui-multiselect { height: 23px; }
+/*-- calendario dos campos input --*/
+.ui-datepicker-calendar,
+.ui-datepicker table { width: 182px !important; }
+.ui-datepicker-calendar th,
+ .ui-datepicker-calendar td  { width: 26px!important;}
+.ui-datepicker-calendar th span { width: 26px !important;}
+ui-datepicker-div{width: 182px !important;}
+
+/*-- tabela de resultados da busca --*/
+table.resultado-busca-contrato tr td a.editar, table.resultado-busca-contrato tr td a.add-projeto, td label.check-fake{ margin-top:-10px;}
+
+/*menu*/
+
+#menu ul > li img{margin-left: 10px; float:right; position:absolute; margin-left:5px;}
+
+/*** modal editar tarefa - Reporte de Horas e Dashboard ***/
+#content.reporte-horas .modal-extrato-tarefas .editar-tarefa form textarea { margin: 0 0 0 -10px; }
+/*** cadastro e editar OS - modal confirma excluir ***/
+#content.cadastros #inserir-os table td.remover .confirma_excluir,
+#content.cadastros #editar-os table td.remover .confirma_excluir,
+#content.visualizar-os table td.remover .confirma_excluir { margin-left: -155px;margin-top: -118px;}
+#content.cadastrar-contrato table td.remover .confirma_excluir { margin-left: -149px; margin-top: -122px; }
+#content.cadastrar-contrato .dashboard .box-tarefas ul li table td .confirma_excluir { margin-left: -165px; margin-top: -90px;}
+#content.cadastrar-contrato .dashboard .box-tarefas ul li .modal-detalhes-os .box-anexos table td.remover .confirma_excluir { margin-left: -152px; margin-top: -110px; }
+
+#content.cadastrar-contrato .dashboard .box-tarefas ul li .modal-detalhes-os .box-anexos table td.remover a { margin: 0 0 0 6px; }
+/*** alocacao, botao sumbit ***/
+#content.cadastrar-contrato .dashboard form.filtrar input.botao { margin: 35px 10px 0 0; }
+#content.cadastrar-contrato .dashboard .box-tarefas ul li .modal-editar-tarefa form span.distribuir-horas { margin: 0; }
+#content.cadastrar-contrato .dashboard .box-tarefas ul li .modal-editar-tarefa form label.except { margin: 10px 0 0 0; }
+#content.reporte-horas .modal-extrato-tarefas ul li a.excluir,
+#content #reporte-detalhado .regua-dia .modal-extrato-tarefas #extrato-tarefas ul li a.excluir { width: 120px; }
+
+/*Modal Relatorio*/
+.modal-relatorio table.table-modal-relatorio tr th h4.valor{ width:166px; margin-right:0;}
+.modal-relatorio ul.resul-modal-relatorio li.titulo_filtro{ width:160px;}
+.modal-relatorio ul.resul-modal-relatorio li.valor-executado{ width:95px;}
+
+/*modal detalhes*/
+#content.home .modal-detalhes .box-atividades table .confirma_excluir { margin-left: -162px;}
+
+#content.dashboard .modal-detalhes-tarefa { margin: -150px 0 0 74px; }

@@ -1,0 +1,135 @@
+/* Page */
+body,html,div,blockquote,img,label,p,h1,h2,h3,h4,h5,h6,pre,ul,ol,li,dl,dt,dd,form,a,fieldset,input,th,td{border:0;outline:none;margin:0;padding:0;}
+ul{list-style:none;}
+
+body {font: normal 13px Arial, sans-serif;}
+h2 {font: normal 2px Arial, sans-serif; padding: 2px 0; margin: 0 0 3px 0;}
+.wrap {width: 960px; margin: 0 auto;}
+.demo-container {padding: 20px 0;}
+.demo-container h4 {font-size: 14px; margin: 0 0 1px 0;}
+
+/* Mega Menu Styles */
+.mega-menu ul, .mega-menu ul li {list-style: none;}
+.mega-menu ul {position: relative; padding: 0; margin: 0;}
+.mega-menu ul li ul {display:inline;}
+.mega-menu .sub {display:inline;}
+.mega-menu .sub ul {display:inline;}
+
+#mega-menu-1 {
+font: normal 13px Arial, sans-serif; 
+list-style: none; 
+position: relative; 
+padding: 0; 
+margin: 0;
+}
+#mega-menu-1 .sub ul {
+display:inline;
+}
+#mega-menu-1 {
+/*background: #222;*/ 
+width: 80%; 
+height: 40px;
+position: relative;
+}
+#mega-menu-1 li {
+float: left; 
+margin: 0; 
+padding: 0; 
+font-weight: bold;
+}
+#mega-menu-1 li a {
+float: left; 
+display:inline; 
+color: #E9E0B9; 
+padding: 17px 25px; 
+/*background: #222; */
+text-decoration: none;
+}
+#mega-menu-1 li.mega-hover a, #mega-menu-1 li.mega-hover a:hover {
+background: #EFE3C5; 
+color: #6F615E;
+}
+#mega-menu-1 li a:hover {
+background: #EFE3C5; 
+color: #6F615E;
+}
+#mega-menu-1 li .sub-container {
+position: absolute;
+}
+
+/* submenu */
+#mega-menu-1 li .sub {
+padding-top: 10px; 
+padding-bottom:1px;
+padding-left:1px;
+padding-right:1px;
+margin-left:1px;
+margin-right:1px;
+}
+#mega-menu-1 li .sub .row {
+width: 100%; 
+overflow: hidden;
+clear: both;
+}
+
+/* submenu */
+#mega-menu-1 li .sub li {
+list-style: none; 
+float: none; 
+width: 100px; 
+font-size: 1em; 
+font-weight: normal;
+text-align:center;
+}
+#mega-menu-1 li .sub li.mega-hdr {
+margin: 0 1px 1px 0; 
+float: left;
+}
+#mega-menu-1 li .sub li.mega-hdr.last {
+margin-right: 0;
+}
+#mega-menu-1 li .sub a {
+background: none; 
+/*color: #111;*/ 
+padding: 0 0; 
+display: block; 
+float: none; 
+font-size: 0.9em;
+}
+#mega-menu-1 li .sub li.mega-hdr a.mega-hdr-a {
+padding: 0 0; 
+margin-bottom: 1px; 
+/*background: #6B6B6B; */
+/*text-transform: uppercase; */
+font-weight: bold; 
+color: #6F615E;
+}
+#mega-menu-1 li .sub li.mega-hdr a.mega-hdr-a:hover {
+color: #000;
+}
+#mega-menu-1 .sub li.mega-hdr li a {
+padding: 1px 2px; 
+font-weight: normal;
+}
+#mega-menu-1 .sub li.mega-hdr li a:hover {
+color: #FFF; 
+background: #FFF;
+}
+#mega-menu-1 .sub ul li {
+padding-right: 0;
+}
+#mega-menu-1 li .sub-container.non-mega .sub {
+padding: 1px;
+}
+#mega-menu-1 li .sub-container.non-mega li {
+padding: 0; 
+width: 190px; 
+margin: 0;
+}
+#mega-menu-1 li .sub-container.non-mega li a {
+padding: 1px 1px 1px 1px;
+}
+#mega-menu-1 li .sub-container.non-mega li a:hover {
+color: #FFF; 
+background: #FFF;
+}

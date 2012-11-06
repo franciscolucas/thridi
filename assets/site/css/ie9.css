@@ -1,0 +1,25 @@
+/*
+	IE9 Style Sheet
+	Estilos para corrigir os bugs do IE9
+
+*/
+
+
+/*----------
+	PAGE
+-----------*/
+
+/*Modal Relatorio*/
+.modal-relatorio table.table-modal-relatorio tr th h4.valor{ width:166px; margin-right:0;}
+.modal-relatorio ul.resul-modal-relatorio li.titulo_filtro{ width:160px;}
+.modal-relatorio ul.resul-modal-relatorio li.valor-executado{ width:95px;}
+
+/*MENU*/
+/*PARA CADA MENU*/
+#menu ul li{ background-image:url(../images/gb-menu-li.png); background-repeat:no-repeat; background-position:left center; padding:0 9px 0 10px;}
+.menu-cadastro-basico > a{width:128px;}
+.menu-relatorios > a{width:93px;}
+.menu-solicitacao > a{width:104px;}
+.menu-contratos > a{width:92px;}
+.menu-gestao-pessoas > a{width:142px;}
+.gestao-de-projetos > a{width:149px;}
