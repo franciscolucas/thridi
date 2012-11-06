@@ -15,6 +15,7 @@ class Quemsomos extends CI_Controller {
     }
  
     function index() {	
+echo 'bruno';
         $data->adminblogs = $this->{$this->model}->get_all_posts();
         $data->title = $this->title;
         dadosGerais($data);
