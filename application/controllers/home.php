@@ -14,7 +14,7 @@ class Home extends CI_Controller {
 
     function index() {
 		$data->title = $this->title;
-        //$this->load->view($this->class.'/index', $data);
+        $this->load->view($this->class.'/index', $data);
     }
 }
 	
