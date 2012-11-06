@@ -18,7 +18,7 @@ class Quemsomos extends CI_Controller {
         $data->adminblogs = $this->{$this->model}->get_all_posts();
         $data->title = $this->title;
         dadosGerais($data);
-        //$this->load->view($this->class.'/index', $data);
+        $this->load->view($this->class.'/index', $data);
     }
 
 }
