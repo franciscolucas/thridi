@@ -1,3 +1,5 @@
+teste staging auto-pull (deploy) - pegando do github
+
 <?php
 
 /*
