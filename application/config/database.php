@@ -45,13 +45,55 @@
 | the active record class
 */
 
+witch ($_SERVER["HTTP_HOST"]) {
+
+	case 'thridi.com.br':
+
+		$dyn_database = 'thridi';
+		$dyn_host = 'localhost';
+		$dyn_username = 'thridiprod';
+		$dyn_password = 'thridi2012';
+
+	break;
+
+        case 'www.thridi.com.br':
+
+                $dyn_database = 'thridi';
+                $dyn_host = 'localhost';
+                $dyn_username = 'thridiprod';
+                $dyn_password = 'thridi2012';
+
+        break;
+
+	case 'staging.thridi.com.br':
+
+		$dyn_database = 'thridistaging';
+		$dyn_host = 'localhost';
+		$dyn_username = 'thridistag';
+		$dyn_password = 'thridi2012';
+
+	break;
+
+	default:
+
+		$dyn_database = 'thrididev';
+		$dyn_host = 'localhost';
+		$dyn_username = 'thrididev';
+		$dyn_password = 'thridi2012';
+
+	break;
+
+}
+
+
+
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'Dublin2010ireland';
-$db['default']['database'] = 'lucasstaging';
+$db['default']['hostname'] = $dyn_host;
+$db['default']['username'] = $dyn_username;
+$db['default']['password'] = $dyn_password;
+$db['default']['database'] = $dyn_database;
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
