@@ -45,7 +45,7 @@
 | the active record class
 */
 
-witch ($_SERVER["HTTP_HOST"]) {
+switch ($_SERVER["HTTP_HOST"]) {
 
 	case 'thridi.com.br':
 
