@@ -43,7 +43,7 @@
 
             <div id="content">
                 <div id="wrappercolecao">
-                    <div id="im"><p align="center"><img src="http://lucasvalida.tzadi.com/thridi/uploads/campanha/thridi_07.jpg" alt="colecao" /></p></div>
+                    <div id="im"><p align="center"><img src="<? echo base_url().'uploads/campanha/thridi_07.jpg'?>" alt="colecao" /></p></div>
                 </div>
                 
             </div>
@@ -78,6 +78,8 @@
             </div>
 
         </div>
+        <div id="footer"><a href="http://tzadi.com"><img src="<?= base_url() ?>assets/site/images/tzadioff.png" alt="tzadi"/></a></div>
+        <div id="footer"><a href="#"><img class="chrome" src="<?= base_url() ?>assets/site/images/chrome.jpeg" alt="chrome" title="works better"/></a></div>
     </body>
 </html>
     
