@@ -50,6 +50,7 @@
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/bxslider.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/fixo.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/form.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/default.js"></script>
 <!-- JavaScript menu -->
 <!-- comentei essa chamada jquery para funcionando o bxslider -->
 <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
