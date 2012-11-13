@@ -42,7 +42,7 @@ class Campanha_model extends CI_Model{
         $this->db->select('*');
         $this->db->from('campanha');
         $this->db->where('ativo', true);
-		$this->db->order_by('id');
+		$this->db->order_by('id', 'desc');
 		return $this->db->get()->result();
     }
 	
