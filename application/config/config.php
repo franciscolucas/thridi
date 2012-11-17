@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url'] = "http://" . $_SERVER['HTTP_HOST'] . "/thridi/";
+$config['base_url'] = "";
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +25,7 @@ $config['base_url'] = "http://" . $_SERVER['HTTP_HOST'] . "/thridi/";
 |
 */
 
-$config['caminho_fisico'] = $_SERVER['DOCUMENT_ROOT'] . "/thridi/";
+$config['caminho_fisico'] = "";
 
 /*
 |--------------------------------------------------------------------------

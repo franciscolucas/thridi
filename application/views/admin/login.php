@@ -1,5 +1,5 @@
 <div>
-    <form method="post" action="/thridi/admin/login" id="login_form">
+    <form method="post" action="<?= base_url() ?>/admin/login" id="login_form">
         <label>Login:</label>
         <input type="text" id="login" name="login"></input>
         </br><label>Senha:</label>

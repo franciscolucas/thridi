@@ -35,7 +35,7 @@ $(document).ready(function($){
 	</li>  
     
     
-	<li><a href="<?= base_url() ?>campanha">Cole&ccedil;&atilde;o</a>
+	<li><a href="<?= base_url() ?>campanha">Campanha</a>
 		<ul>
 			<li><a href="<?= base_url() ?>release">Release</a>
 				<ul>

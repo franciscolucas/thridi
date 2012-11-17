@@ -91,7 +91,7 @@
                     <td class="thumb"><img src="<?= base_url().'uploads/campanha/thumb/'.$row->imagem.'_thumb.JPG'; ?>"  /></td>
 				<? }?>             
             
-            <td class="colecao"><a href="<?= base_url() ?>admincampanha/editar/<?=$row->id?>" class="acoes">Editar</a><a href="javascript:;" title="Deseja excluir item selecionado?" class="acoes" onclick="modal_confirma_excluir($(this),'admincampanha','excluir_campanha',<?=$row->id?>)">Excluir</a></td>
+            <td class="colecao"><a href="javascript:;" title="Deseja excluir item selecionado?" class="acoes" onclick="modal_confirma_excluir($(this),'admincampanha','excluir_campanha',<?=$row->id?>)">Excluir</a></td>
         </tr>
         <? }?>
        
