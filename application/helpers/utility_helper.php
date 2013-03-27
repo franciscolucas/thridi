@@ -21,7 +21,7 @@ function email_interacao($nome = false, $email = false, $assunto = false,$mensag
         $ci->load->library('email');
         $config['mailtype'] = 'html';
         $ci->email->initialize($config);
-        $ci->email->to('franlucas.cisco@gmail.com');
+        $ci->email->to('ana.schilling@thridi.com.br');
         $ci->email->from('franlucas.cisco@gmail.com');
         $ci->email->subject('Novo Contato');
 		$data->nome = $nome;
