@@ -32,8 +32,23 @@ $(document).ready(function($){
 			</li>
 			
 		</ul>
+	</li> 
+
+	<li><a href="<?= base_url() ?>cuidado">Couro</a>
+		<ul>
+			<li><a href="<?= base_url() ?>cuidado">Cuidados</a>
+				<ul>
+				</ul>
+			</li>
+			<li><a href="<?= base_url() ?>informacao">Informações</a>
+			    <ul>
+				</ul>
+			</li>
+			
+		</ul>
 	</li>  
-    
+
+	<li><a href="<?= base_url() ?>catalogo">Catálogo</a></li>
     
 	<li><a href="<?= base_url() ?>campanha">Campanha</a>
 		<ul>
@@ -41,21 +56,16 @@ $(document).ready(function($){
 				<ul>
 				</ul>
 			</li>
-			<li><a href="<?= base_url() ?>campanha">Campanha</a>
+			<li><a href="<?= base_url() ?>campanha">Fotos</a>
 			    <ul>
 				</ul>
 			</li>
            
-            <li><a href="<?= base_url() ?>cuidado">Cuidados</a>
-			    <ul>
-				</ul>
-			</li>
 		</ul>
 	</li>  
     
     
-
-   
+    <li><a href="<?= base_url() ?>closet">Closet</a></li>
     <li><a href="<?= base_url() ?>onde">Onde Encontrar</a></li>
     <li><a href="<?= base_url() ?>contato">Contato</a></li>  
 </ul>

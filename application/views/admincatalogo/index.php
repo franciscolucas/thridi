@@ -23,6 +23,8 @@
     <li><a href="<?= base_url() ?>adminclipping" class="cuidado">Clipping</a></li>
     <li><a href="<?= base_url() ?>adminminha" class="cuidado">Minha</a></li>
     <li><a href="<?= base_url() ?>admininformacao" class="cuidado">Informacao</a></li>
+    <li><a href="<?= base_url() ?>admincatalogo" class="cuidado">Catalogo</a></li>
+    <li><a href="<?= base_url() ?>admincloset" class="cuidado">Closet</a></li>
     <?php if($this->session->userdata('logged')) { ?> <li><a href="<?= base_url() ?>admin/logout" class="cuidado">sair</a></li> <?php } ?> 
     </ul>
   </div>
@@ -35,10 +37,10 @@
 
 <div id="contentadmin">
       
-<h1>Campanha</h1>
+<h1>Catalogo</h1>
                     
-<p align="right"><a href="<?= base_url() ?>campanha/" title="Ver campanha" class="criarnovo" target="_blank">Visualizar Campanha</a></p>
-<p align="right"><a href="<?= base_url() ?>admincampanha/cadastro" title="Cadastrar imagem" class="criarnovo">Cadastrar Imagem</a></p>
+<p align="right"><a href="<?= base_url() ?>catalogo/" title="Ver catalogo" class="criarnovo" target="_blank">Visualizar catalogo</a></p>
+<p align="right"><a href="<?= base_url() ?>admincatalogo/cadastro" title="Cadastrar imagem" class="criarnovo">Cadastrar Imagem</a></p>
 
 
 <table>
@@ -49,11 +51,11 @@
         </tr>
     </thead>
     <tbody>
-        <?  foreach($admincampanhas as $row){?>
+        <?  foreach($admincatalogos as $row){?>
             <?php 
               $config['image_library'] = 'gd2';
-              $config['source_image'] = 'uploads/campanha/'.$row->imagem;
-              $config['new_image'] = 'uploads/campanha/thumb/';
+              $config['source_image'] = 'uploads/catalogo/'.$row->imagem;
+              $config['new_image'] = 'uploads/catalogo/thumb/';
               $config['create_thumb'] = TRUE;
               $config['maintain_ratio'] = TRUE;
               $config['width']	 = 150;
@@ -69,30 +71,30 @@
         <tr>
             
 				<? if ($ex == 'png'){?>
-                    <td class="thumb"><img src="<?= base_url().'uploads/campanha/thumb/'.$row->imagem.'_thumb.png'; ?>"  /></td>
+                    <td class="thumb"><img src="<?= base_url().'uploads/catalogo/thumb/'.$row->imagem.'_thumb.png'; ?>"  /></td>
 				<? }?>
                 
 				<? if ($ex == 'PNG'){?>
-                    <td class="thumb"><img src="<?= base_url().'uploads/campanha/thumb/'.$row->imagem.'_thumb.PNG'; ?>"  /></td>
+                    <td class="thumb"><img src="<?= base_url().'uploads/catalogo/thumb/'.$row->imagem.'_thumb.PNG'; ?>"  /></td>
 				<? }?>
                 
 				<? if ($ex == 'gif'){?>
-                    <td class="thumb"><img src="<?= base_url().'uploads/campanha/thumb/'.$row->imagem.'_thumb.gif'; ?>"  /></td>
+                    <td class="thumb"><img src="<?= base_url().'uploads/catalogo/thumb/'.$row->imagem.'_thumb.gif'; ?>"  /></td>
 				<? }?>
                 
 				<? if ($ex == 'GIF'){?>
-                    <td class="thumb"><img src="<?= base_url().'uploads/campanha/thumb/'.$row->imagem.'_thumb.GIF'; ?>"  /></td>
+                    <td class="thumb"><img src="<?= base_url().'uploads/catalogo/thumb/'.$row->imagem.'_thumb.GIF'; ?>"  /></td>
 				<? }?>
                 
 				<? if ($ex == 'jpg'){?>
-                    <td class="thumb"><img src="<?= base_url().'uploads/campanha/thumb/'.$row->imagem.'_thumb.jpg'; ?>"  /></td>
+                    <td class="thumb"><img src="<?= base_url().'uploads/catalogo/thumb/'.$row->imagem.'_thumb.jpg'; ?>"  /></td>
 				<? }?> 
                 
 				<? if ($ex == 'JPG'){?>
-                    <td class="thumb"><img src="<?= base_url().'uploads/campanha/thumb/'.$row->imagem.'_thumb.JPG'; ?>"  /></td>
+                    <td class="thumb"><img src="<?= base_url().'uploads/catalogo/thumb/'.$row->imagem.'_thumb.JPG'; ?>"  /></td>
 				<? }?>             
             
-            <td class="colecao"><a href="javascript:;" title="Deseja excluir item selecionado?" class="acoes" onclick="modal_confirma_excluir($(this),'admincampanha','excluir_campanha',<?=$row->id?>)">Excluir</a></td>
+            <td class="colecao"><a href="javascript:;" title="Deseja excluir item selecionado?" class="acoes" onclick="modal_confirma_excluir($(this),'admincatalogo','excluir_catalogo',<?=$row->id?>)">Excluir</a></td>
         </tr>
         <? }?>
        
