@@ -39,7 +39,7 @@ class Admincampanha extends CI_Controller {
 		$arquivo = uploadImagem('uploads/campanha', 'logo');
 		$data->imagem = $arquivo;
 		$return = $this->{$this->model}->insert_admincampanha($data);
-		redirect($this->class);
+		redirect($this->class.'/cadastro');
     }
 	
 	    function cadastrarimagem() {

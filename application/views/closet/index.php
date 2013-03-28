@@ -41,6 +41,12 @@
 
             <div id="linha"></div>
 
+            <p align="center">Entre e sinta-se a vontade. Experimente. Permaneça o tempo que <p/>
+            <p align="center">quiser. O Closet da Thridi foi criado para você se inspirar em looks com <p/>
+            <p align="center">diferentes peças de couro. Envie-nos suas dúvidas ou sugestões: <p/>
+            <p align="center">contato@thridi.com.br<p/>
+            <br/>
+
             <div id="content">
                 <div id="wrappercolecao">
                     <div id="im"><p align="center"><img src="<? echo base_url().'uploads/closet/Slide01.jpg'?>" alt="colecao" /></p></div>

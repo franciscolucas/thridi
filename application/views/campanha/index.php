@@ -41,6 +41,7 @@
 
             <div id="linha"></div>
 
+
             <div id="content">
                 <div id="wrappercolecao">
                     <div id="im"><p align="center"><img src="<? echo base_url().'uploads/campanha/thridi_07.jpg'?>" alt="colecao" /></p></div>
@@ -70,7 +71,7 @@
                 <p align="center" style="margin-top:40px; margin-bottom:10px"><strong>Ficha t&eacute;cnica</strong><p/>
                 <p align="center">Fotógrafo: Denis Paul<p/>
                 <p align="center">Assistente de fotografia: Maristela Meurer<p/>
-                <p align="center">Modelo: Larissa Neumann<p/>
+                <p align="center">Modelos: Larissa Neumann e Dóris Konrad<p/>
                 <p align="center">Beleza: Raisa Machado<p/>
                 <p align="center">Styling: Ana Júlia Schilling<p/>
 
