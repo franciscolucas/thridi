@@ -15,9 +15,9 @@
                 $('a.imaior').click(function () {
                     var url = $(this).attr('href'), 
                     image = new Image();
-                    console.log(image.src = url);
+                    image.src = url;
                     image.onload = function () {
-                        console.log($('#wrappercolecao p').addClass("img").empty().append(image));
+                        $('#wrappercolecao p').addClass("img").empty().append(image);
                         
                     }
                     return false;
