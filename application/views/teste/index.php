@@ -1,51 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<title>oi</title>
-</head>
-<body>
-  <div class="form">
-  <form method="post" action="process.php">
-    <div id="city">
-      <label>City</label>
-      <input type="text" name="city" class="text" />
-    </div>
-    <div>
-      <input type="submit" id="submit"/>
-    </div>
-  </form>
-  </div>
-</body>
-</html>
+<title>jQuery autocomplete with JSON / JSONP, overriding q and limit parameters to use geoNames.org</title>
 
 <script type="text/javascript">
-  $( "#city" ).autocomplete({
-  source: function( request, response ) {
-    $.ajax({
-      url: "http://ws.geonames.org/searchJSON",
-      dataType: "jsonp",
-      data: {
-        featureClass: "P",
-        style: "full",
-        maxRows: 12,
-        name_startsWith: request.term
-      },
-      success: function( data ) {
-        //Display city name, state name, country name
-        response( $.map( data.geonames, function( item ) {
-          return {
-            label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
-            value: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName
-          }
-        }));
+  $(document).ready(function() {
+  $("#city").autocomplete("http://ws.geonames.org/searchJSON", {
+    dataType: 'jsonp',
+    parse: function(data) {
+      var rows = new Array();
+      data = data.geonames;
+      for(var i=0; i<data.length; i++){
+        rows[i] = { data:data[i], value:data[i].name, result:data[i].name };
       }
-    });
-  },
-  minLength: 2,
-  select: function( event, ui ) {
-    $('#city').val(ui.item.value);
-    return false;
-  }
-});
+      return rows;
+    },
+    formatItem: function(row, i, n) {
+      return row.name + ', ' + row.adminCode1;
+    },
+    extraParams: {
+      // geonames doesn't support q and limit, which are the autocomplete plugin defaults, so let's blank them out.
+      q: '',
+      limit: '',
+      country: 'US',
+      featureClass: 'P',
+      style: 'full',
+      maxRows: 50,
+      name_startsWith: function () { return $("#city").val() }
+    },
+    max: 50
+  }); 
+     
+  });
 </script>
+
+</head>
+<body>
+This is a demonstration of a few things:
+<ul>
+  <li>hacking the jQuery autocomplete plugin to support JSONP data</li>
+  <li>Overriding the default q and limit parameters that the autocomplete plugin sends (they're hard-coded!)</li>
+  <li>Toying with the geonames.org web service, which allows you to do all sorts of great searches on geographic data</li>
+</ul>
+<form name="test" action="">
+        <input id="city" name="city"> Type the start of a US city name in this field...
+</form>
+</body>
+</html>
 
