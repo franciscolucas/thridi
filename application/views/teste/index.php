@@ -1,5 +1,6 @@
 <html>
 <head>
+<? $this->load->view('inc/head1.php') ?>
 <title>jQuery autocomplete with JSON / JSONP, overriding q and limit parameters to use geoNames.org</title>
 <style>
 .ac_results {
@@ -51,8 +52,6 @@
   color: white;
 }
 </style>
-<? $this->load->view('inc/head.php') ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
   $("#city").autocomplete("http://ws.geonames.org/searchJSON", {
