@@ -1,7 +1,7 @@
 <html>
 <head>
 <? $this->load->view('inc/head1.php') ?>
-<title>jQuery autocomplete with JSON / JSONP, overriding q and limit parameters to use geoNames.org</title>
+<title>jQuery autocomplete with JSON / JSONP geoNames.org</title>
 <style>
 .ac_results {
   padding: 0px;
@@ -85,9 +85,9 @@
 
 </head>
 <body>
-This is a demonstration of a few things:
+Busque por uma cidade
 <form name="test" action="">
-        <input id="city" name="city"> Type the start of a US city name in this field...
+        <input id="city" name="city"> 
 </form>
 </body>
 </html>
