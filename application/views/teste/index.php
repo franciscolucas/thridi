@@ -65,17 +65,17 @@
       return rows;
     },
     formatItem: function(row, i, n) {
-      return row.name + ', ' + row.adminCode1;
+      return row.name + ', ' + row.adminName1;
     },
     extraParams: {
       // geonames doesn't support q and limit, which are the autocomplete plugin defaults, so let's blank them out.
-      q: '',
-      limit: '',
-      country: 'US',
-      featureClass: 'P',
-      style: 'full',
-      maxRows: 50,
-      name_startsWith: function () { return $("#city").val() }
+      //q: '',
+      //limit: '',
+      //country: 'US',
+      //featureClass: 'P',
+      //style: 'full',
+      //maxRows: 50,
+      //name_startsWith: function () { return $("#city").val() }
     },
     max: 50
   }); 
