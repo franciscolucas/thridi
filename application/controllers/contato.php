@@ -11,7 +11,7 @@ class Contato extends CI_Controller {
         parent::__construct();
 		$this->model = 'admincontato_model';
 		$this->class = $this->router->class;
-		$this->title = 'Thridi - Contato';
+		$this->title = 'Thridi -- Contato';
 		$this->load->model($this->model);
 
  }
