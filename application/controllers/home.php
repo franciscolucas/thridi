@@ -13,7 +13,7 @@ class Home extends CI_Controller {
  }
 
     function index() {
-		$data->title = 'Thridi';
+		//$data->title = 'Thridi';
         $this->load->view($this->class.'/index', $data);
     }
 }
