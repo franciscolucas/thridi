@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Thridi - Quem Somos</title>
-<head>
+</head>
 <? $this->load->view('inc/head.php') ?>
 </head>
 
