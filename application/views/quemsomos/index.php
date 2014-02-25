@@ -3,8 +3,9 @@
 <head>
 <title>Thridi - Quem Somos</title>
 </head>
+<header>
 <? $this->load->view('inc/head.php') ?>
-</head>
+</header>
 
 <body>
 <div id="container">
