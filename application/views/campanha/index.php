@@ -79,8 +79,8 @@
             </div>
 
         </div>
-        <div id="footer"><a href="http://tzadi.com"><img src="<?= base_url() ?>assets/site/images/tzadioff.png" alt="tzadi"/></a></div>
-        <div id="footer"><a href="#"><img class="chrome" src="<?= base_url() ?>assets/site/images/chrome.jpeg" alt="chrome" title="works better"/></a></div>
-    </body>
+        <div id="footer"><!-- <a href="http://tzadi.com"><img src="<?= base_url() ?>assets/site/images/tzadioff.png" alt="tzadi"/></a> --></div>
+<div id="footer"><!-- <a href="#"><img class="chrome" src="<?= base_url() ?>assets/site/images/chrome.jpeg" alt="chrome" title="works better"/></a> --></div>
+ </body>
 </html>
     

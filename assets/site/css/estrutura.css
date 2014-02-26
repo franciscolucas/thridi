@@ -7,7 +7,7 @@
 #menu{/*float:left;*/ margin-top:0; margin-left:250px; padding-top:10px;}
 
 /*---------------[footer]---------------*/
-#footer  {background: url("../images/headerfff.png"); position: relative; margin-bottom: -18px; margin-top: 10px }
+#footer  {background: url("../images/headerfff.png"); position: relative; margin-bottom: 50px; margin-top: 10px }
 #footer img {height: 20px; width: 20px; float: right; margin-right: 40px; margin-top: 22px; margin-bottom: 20px;}
 #footer img .chrome{height: 20px; width: 20px; float: left; margin-left: 40px; margin-top: 22px; margin-bottom: 20px;}
 
