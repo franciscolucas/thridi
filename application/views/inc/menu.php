@@ -66,7 +66,7 @@ $(document).ready(function($){
     
     
     <li><a href="<?= base_url() ?>closet">Closet</a></li>
-    <li><a href="<?= base_url() ?>onde">Onde Encontrar</a></li>
+    <!-- <li><a href="<?= base_url() ?>onde">Onde Encontrar</a></li> -->
     <li><a href="<?= base_url() ?>contato">Contato</a></li>  
 </ul>
 
