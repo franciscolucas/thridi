@@ -17,6 +17,7 @@ class Campanha extends CI_Controller {
  }
 
     function index($busca = array()) {
+    	$data = new stdClass ();
 		$data->campanhas = $this->{$this->model}->get_all_campanhas($busca);
 		$data->title = $this->title;
 		dadosGerais($data);

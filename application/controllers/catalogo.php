@@ -17,6 +17,7 @@ class Catalogo extends CI_Controller {
  }
 
     function index($busca = array()) {
+    	$data = new stdClass ();
 		$data->catalogos = $this->{$this->model}->get_all_catalogos($busca);
 		$data->title = $this->title;
 		dadosGerais($data);

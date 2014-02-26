@@ -17,6 +17,7 @@ class Closet extends CI_Controller {
  }
 
     function index($busca = array()) {
+    	$data = new stdClass ();
 		$data->closets = $this->{$this->model}->get_all_closets($busca);
 		$data->title = $this->title;
 		dadosGerais($data);
