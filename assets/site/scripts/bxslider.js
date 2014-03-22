@@ -1,18 +1,18 @@
 $(document).ready(function(){				   
-             $('#slider1').bxSlider({
+             //$('#slider1').bxSlider({
 									
 
 			    /*auto: true,*/
-				displaySlideQty: 5,
-                moveSlideQty: 1,
-                pager: false,
-				infiniteLoop: true,
-				nextText: '',
-				prevText: '',
+				//displaySlideQty: 50,
+                //moveSlideQty: 1,
+                //pager: false,
+				//infiniteLoop: true,
+				//nextText: '',
+				//prevText: '',
 				
 
 									
-	         });
+	         //});
 			 
              $('#clipping').bxSlider({
 									

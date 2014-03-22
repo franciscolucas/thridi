@@ -33,12 +33,11 @@
 
 
 /*COLECAO*/
-#wrapperthumb {width:65%; margin:auto auto; /*border:solid 1px #000*/}
+#wrapperthumb {width:65%; margin:auto auto; text-align: center;}
 #slider1 { width:20%; margin:auto auto; /*border:solid 1px #F00*/}
 .colecao { margin: auto auto;}
 .bx-wrapper, .bx-window {margin: auto auto; padding-bottom:4px;padding-top:3px; /*border:solid 1px #0C0*/}
-/*seta*/
-.bx-prev {position:absolute;top:25%;left:-10%;width:71px;height: 71px;background: url("../images/flechas8.png") no-repeat;}
+/*seta*.bx-prev {position:absolute;top:25%;left:-10%;width:71px;height: 71px;background: url("../images/flechas8.png") no-repeat;}
 .bx-next {position: absolute;top:25%;right:-15%;width: 71px;height: 71px;background: url("../images/flechas81.png") no-repeat;}
 /*.bx-prev {float:left;width:71px;height: 71px;background: url("../images/seta_esquerda.png") no-repeat;}
 .bx-next {float:right;width: 71px;height: 71px;background: url("../images/seta_direita.png") no-repeat;}*/
