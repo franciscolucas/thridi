@@ -8,7 +8,7 @@
             #wrappercolecao { text-align:center; width:65%; margin:auto auto; max-height:380px; min-height:380px; /*border:solid 1px yellow*/}
             img.colecao:hover { outline: 3px solid #DCC08E; }
             a.imaior {margin:auto auto; text-align:center; vertical-align:middle}
-            #im p img { max-height:58%; max-width:100%; }
+            #im p img { max-height:390px; max-width:100%; }
         </style>
         <script type="text/javascript">
             $(document).ready(function() {
