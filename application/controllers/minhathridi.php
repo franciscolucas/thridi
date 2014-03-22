@@ -17,6 +17,7 @@ class Minhathridi extends CI_Controller {
  }
 
     function index() {
+    	$data = new stdClass ();
 		$data->title = $this->title;
         $this->load->view($this->class.'/index', $data);
 		$this->load->helper(array('form', 'url'));
@@ -25,12 +26,14 @@ class Minhathridi extends CI_Controller {
 	
 
 	 function cadastro() {
+	 	$data = new stdClass ();
         $data->title = $this->title;
         dadosGerais($data);
         $this->load->view($this->class.'/index', $data);
     }
 
     function cadastrar() {
+    	$data = new stdClass ();
 		$this->load->view($this->class.'/index');
 		$data->nome = $this->input->post('nome');
 		$data->ativo = true;

@@ -14,6 +14,7 @@ class Home extends CI_Controller {
 
     function index() {
         $data = new stdClass ();
+        $data = new stdClass ();
 		$data->title = $this->title;
         $this->load->view($this->class.'/index', $data);
     }

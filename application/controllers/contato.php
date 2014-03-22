@@ -25,13 +25,14 @@ class Contato extends CI_Controller {
 	
 
 	 function cadastro() {
+	 	$data = new stdClass ();
         $data->title = $this->title;
         dadosGerais($data);
         $this->load->view($this->class.'/index', $data);
     }
 
     function cadastrar() {
-
+        $data = new stdClass ();
 		$this->load->view($this->class.'/index');
 		$data->nome = $this->input->post('nome');
 		$data->ativo = true;

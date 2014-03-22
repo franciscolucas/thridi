@@ -15,6 +15,7 @@ class Onde extends CI_Controller {
     }
  
     function index() {	
+        $data = new stdClass ();
         $data->adminblogs = $this->{$this->model}->get_all_posts();
         $data->title = $this->title;
         dadosGerais($data);
