@@ -15,18 +15,17 @@
                 $('a.imaior').click(function () {
                     var url = $(this).attr('href'), 
                     image = new Image();
-                    console.log(image.src = url);
+                    image.src = url;
                     image.onload = function () {
-                        console.log($('#wrappercolecao p').addClass("img").empty().append(image));
+                        $('#wrappercolecao p').addClass("img").empty().append(image);
                         
                     }
                     return false;
                 }); 
-                
-				
-
-          });
-
+                $('img.colecao').click(function(){
+                   $('html, body').animate({scrollTop:0}, 'slow');
+                });
+            });
         </script>
     </head>
 
@@ -50,8 +49,7 @@
 
             <div id="linha"></div>
 
-            <div id="wrapperthumb">
-                <ul id="slider1">
+            <div id="wrapperthumb"> 
                     <? 
                     foreach ($catalogos as $row) {
                         
@@ -60,20 +58,21 @@
                         $ex = substr($ex, -3);
                         $row->imagem = substr($row->imagem, 0, strlen($row->imagem) - 4);
                         ?>                                    
-                        <li>
-                            <a class="imaior" title="<?=$row->imagem?>" href="<? echo base_url() . 'uploads/catalogo/' . $row->imagem . '.jpg'; ?>"><img class="colecao" src="<? echo base_url() . 'uploads/catalogo/thumb/' . $row->imagem . '_thumb.jpg'; ?>" alt="catalogo"  /></a>
-                        </li>  
+
+                            <a class="imaior" title="<?=$row->imagem?>" href="<? echo base_url() . 'uploads/catalogo/' . $row->imagem . '.jpg'; ?>">
+                          <div style="width:120px; height:105px; text-align:center; display:inline-block; margin:0 10px 10px 0;">
+                            <img class="colecao" src="<? echo base_url() . 'uploads/catalogo/thumb/' . $row->imagem . '_thumb.jpg'; ?>" alt="catalogo"  /></a>
+                          </div>
                     <? } ?>
-
-                </ul>
-                
-
-                
-            </div>
+            </div> 
 
         </div>
+<<<<<<< HEAD
         <div id="footer"><!-- <a href="http://tzadi.com"><img src="<?= base_url() ?>assets/site/images/tzadioff.png" alt="tzadi"/></a> --></div>
 <div id="footer"><!-- <a href="#"><img class="chrome" src="<?= base_url() ?>assets/site/images/chrome.jpeg" alt="chrome" title="works better"/></a> --></div>
  </body>
+=======
+    </body>
+>>>>>>> origin/staging
 </html>
     

@@ -17,6 +17,7 @@ class Clipping extends CI_Controller {
  }
 
     function index($busca = array()) {
+    	$data = new stdClass ();
 		$data->clippings = $this->{$this->model}->get_all_clippings($busca);
 		$data->title = $this->title;
 		dadosGerais($data);
@@ -24,6 +25,7 @@ class Clipping extends CI_Controller {
     }
 	
 	function visualizartudo($busca = array()) {
+		$data = new stdClass ();
 		$data->clippings = $this->{$this->model}->get_all_clippings($busca);
         $data->title = $this->title;
         dadosGerais($data);

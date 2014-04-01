@@ -17,6 +17,7 @@ class Colecao extends CI_Controller {
  }
 
     function index($busca = array()) {
+    	$data = new stdClass ();
 		$data->colecaos = $this->{$this->model}->get_all_colecaos($busca);
 		$data->title = $this->title;
 		dadosGerais($data);
