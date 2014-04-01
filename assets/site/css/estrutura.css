@@ -18,6 +18,8 @@
 #face a:hover{height:50px; width:50px; background: url("../images/fe.png") 0 -25px no-repeat; background-size:25px 50px;}
 #pin{ height:50px; width:50px; background: url("../images/pi.png") 0 0 no-repeat; background-size:25px 50px;float:right; margin-top:1px; margin-right:-3px;}
 #pin a:hover{height:50px; width:50px; background: url("../images/pi.png") 0 -25px no-repeat; background-size:25px 50px;}
+#insta{ height:50px; width:50px; background: url("../images/insta.png") 0 0 no-repeat; background-size:25px 50px;float:right; margin-top:1px; margin-right:-4px;}
+#insta a:hover{height:50px; width:50px; background: url("../images/insta.png") 0 -25px no-repeat; background-size:25px 50px;}
 
 #linha { margin-left:auto; margin-right:auto; margin-top:30px; margin-bottom:15px; height:2px; width:65%; background: url("../images/tira15.png"); position: relative; }
 

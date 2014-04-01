@@ -22,6 +22,7 @@ $(document).ready(function($){
 <ul id="navlist">
   <li id="face"><a href="http://www.facebook.com/ThridiOficial" target="_blank"></a></li>
   <li id="pin"><a href="http://pinterest.com/thridi/ " target="_blank"></a></li>
+  <li id="insta"><a href="http://instagram.com/thridioficial/ " target="_blank"></a></li>
 </ul>
 <ul id="mega-menu-1" class="mega-menu">
 	<li><a href="<?= base_url() ?>quemsomos">A Marca</a>
