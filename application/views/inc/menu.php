@@ -2,7 +2,7 @@
 <input type="hidden" id="url" value="<?= base_url() ?>" />
 
 <head>
-<? $this->load->view('inc/head.php') ?>
+<? //$this->load->view('inc/head.php') ?>
 <script type="text/javascript">
 $(document).ready(function($){
 	$('#mega-menu-1').dcMegaMenu({

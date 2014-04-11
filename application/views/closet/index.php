@@ -22,8 +22,8 @@
                     }
                     return false;
                 }); 
-                $('img.colecao').click(function(){
-                   $('html, body').animate({scrollTop:0}, 'slow');
+                $("a#anima1").fancybox({
+                'titleShow'     : false
                 });
             });
         </script>
@@ -46,15 +46,6 @@
             <p align="center">contato@thridi.com.br<p/>
             <br/>
 
-            <div id="content">
-                <div id="wrappercolecao">
-                    <div id="im"><p align="center"><img src="<? echo base_url().'uploads/closet/Slide01.jpg'?>" alt="colecao" /></p></div>
-                </div>
-                
-            </div>
-
-            <div id="linha"></div>
-
             <div id="wrapperthumb">
 
                     <? 
@@ -65,8 +56,8 @@
                         $ex = substr($ex, -3);
                         $row->imagem = substr($row->imagem, 0, strlen($row->imagem) - 4);
                         ?>                                    
-                            <a class="imaior" title="<?=$row->imagem?>" href="<? echo base_url() . 'uploads/closet/' . $row->imagem . '.jpg'; ?>">
-                         <div style="width:120px; height:105px; text-align:center; display:inline-block; margin:0 10px 10px 0;">
+                            <a class="imaior" id="anima1" title="<?=$row->imagem?>" href="<? echo base_url() . 'uploads/closet/' . $row->imagem . '.jpg'; ?>">
+                            <div style="width:120px; height:105px; text-align:center; display:inline-block; margin:0 10px 10px 0;">
                             <img class="colecao" src="<? echo base_url() . 'uploads/closet/thumb/' . $row->imagem . '_thumb.jpg'; ?>" alt="closet"  /></a>
                          </div>
                     <? } ?>            

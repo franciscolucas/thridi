@@ -37,22 +37,28 @@
 <link rel="stylesheet" href="<?= base_url() ?>assets/site/css/menu/dcmegamenu.css"  type="text/css" />
 <link href="<?= base_url() ?>assets/site/css/menu/skins/black.css" rel="stylesheet" type="text/css" />
 
-
+<!-- <link rel="stylesheet" href="<?= base_url() ?>assets/site/css/jquery.lightbox.css" type="text/css" />  
+<link rel="stylesheet" href="<?= base_url() ?>assets/site/css/lightbox/lightbox.css" type="text/css" media="screen" />-->
 
 <!-- Biblioteca JavaScript -->
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/lib/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/lib/jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/fancybox/jquery.fancybox-1.3.1.js"></script>
+<link rel="stylesheet" href="<?= base_url() ?>assets/site/scripts/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" />
 
 
-<!-- JavaScript padrão do site -->
+
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/ie6.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/jquery.bxSlider.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/bxslider.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/fixo.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/form.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/default.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/menu/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/menu/jquery.dcmegamenu.1.3.3.js"></script>
+<!-- <script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/jquery.bxSlider.min.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/bxslider.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/jquery.lightbox.js"></script>-->
 <!-- JavaScript menu -->
 <!-- comentei essa chamada jquery para funcionando o bxslider -->
 <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
-<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/menu/jquery.hoverIntent.minified.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/site/scripts/menu/jquery.dcmegamenu.1.3.3.js"></script>

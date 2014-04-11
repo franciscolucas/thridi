@@ -5,7 +5,7 @@
         <? $this->load->view('inc/head.php') ?>
         <? $this->load->library('image_lib'); ?>
         <style>
-            #wrappercolecao { text-align:center; width:65%; margin:auto auto; max-height:380px; min-height:380px;}
+            #wrappercolecao { text-align:center; width:65%; margin:auto auto; max-height:380px; min-height:380px; /*border:solid 1px yellow*/}
             img.colecao:hover { outline: 3px solid #DCC08E; }
             a.imaior {margin:auto auto; text-align:center; vertical-align:middle}
             #im p img { max-height:390px; max-width:100%; }
@@ -23,8 +23,8 @@
                     return false;
                 }); 
 
-                $('img.colecao').click(function(){
-                   $('html, body').animate({scrollTop:0}, 'slow');
+                $("a#anima1").fancybox({
+                'titleShow'     : false
                 });
             });
         </script>
@@ -38,15 +38,6 @@
             </div>
 
             <div id="linha"></div>
-
-
-            <div id="content">
-                <div id="wrappercolecao">
-                    <div id="im"><p align="center"><img src="<? echo base_url().'uploads/campanha/thridi_07.jpg'?>" alt="colecao" /></p></div>
-                </div>
-                
-            </div>
-            <div id="linha"></div>
                 <div id="wrapperthumb"> 
                     <? 
                     foreach ($campanhas as $row) {
@@ -55,17 +46,13 @@
                         $ex = substr($ex, -3);
                         $row->imagem = substr($row->imagem, 0, strlen($row->imagem) - 4);
                         ?>                                    
-                    
-                            <a class="imaior" title="<?=$row->imagem?>" href="<? echo base_url() . 'uploads/campanha/' . $row->imagem . '.jpg'; ?>">
-                         <div style="width:120px; height:105px; text-align:center; display:inline-block; margin:0 10px 10px 0;">
-                            <img class="colecao" src="<? echo base_url() . 'uploads/campanha/thumb/' . $row->imagem . '_thumb.jpg'; ?>" alt="campanha"  /></a>
-                         </div>
-                        
+                        <a class="imaior" id="anima1" href="<? echo base_url() . 'uploads/campanha/' . $row->imagem . '.jpg'; ?>">
+                          <div style="width:120px; height:105px; text-align:center; display:inline-block; margin:0 10px 10px 0;">
+                        <img class="colecao" src="<? echo base_url() . 'uploads/campanha/thumb/' . $row->imagem . '_thumb.jpg'; ?>" /></a>
+                        </div>
                         <? 
                     } ?>
                 </div>
-
-
                 <p align="center" style="margin-top:1px; margin-bottom:10px"><strong>Ficha t&eacute;cnica</strong><p/>
                 <p align="center">Fotógrafo: Denis Paul<p/>
                 <p align="center">Assistente de fotografia: Maristela Meurer<p/>
@@ -73,6 +60,6 @@
                 <p align="center">Beleza: Raisa Machado<p/>
                 <p align="center" style="margin-bottom:10px">Styling: Ana Júlia Schilling<p/>
         </div>
-        </body>
+    </body>
 </html>
     
