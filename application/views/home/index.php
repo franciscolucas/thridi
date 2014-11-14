@@ -17,7 +17,9 @@
     -->
     <div id="linha"></div>
         
-    <div id="wrapper" class="die"><img class="fullwidthw" src="<?= base_url() ?>assets/site/images/thridi_006_HOME.jpg" alt="home"/></div>
+    <!--<div id="wrapper" class="die"><img class="fullwidthw" src="<?= base_url() ?>assets/site/images/thridi_006_HOME.jpg" alt="home"/></div>-->
+    <div id="wrapper" class="die"><img class="fullwidthw" src="<?= base_url() ?>https://cloud.githubusercontent.com/assets/1354170/5049250/550f25a0-6c0b-11e4-918a-6fe1124f9a5c.jpg" alt="home"/></div>
+    
     
     <div id="linha"></div>
 
